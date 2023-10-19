@@ -8,12 +8,12 @@ header {
 body {
   color: #444140;
   background-color: #f7ebe8;
-  font-family: roboto;
+  font-family: sans-serif;
   font-size: 16px;
 }
 
 .pageTitle {
-  font-family: roboto;
+  font-family: sans-serif;
   font-size: 48px;
   font-weight: 900;
   margin: 20px;
@@ -28,4 +28,21 @@ body {
 #tasks-carousel {
   background-color: #dd5352;
   border-radius: 12px;
+}
+
+.carousel {
+  color: #f7ebe8;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.badge {
+  font-size: 16px;
+}
+
+.clock-component {
+  color: #444140;
 }

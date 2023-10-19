@@ -30,7 +30,7 @@
     </header>
 
     <!-- visible content goes here -->
-    <div class="container">
+    <div class="container mt-5">
       <h2>Overview</h2>
 
       <p>
@@ -43,13 +43,14 @@
         from 1 to 4, with 1 being the lowest and 4 being the highest.
       </p>
 
-      <h2>Tasks</h2>
+      <h2 class="mb-3">Tasks</h2>
 
-      <div id="tasks-carousel" class="carousel slide" data-bs-ride="true">
+      <div id="tasks-carousel" class="carousel slide mb-4" data-bs-ride="true">
         <div class="carousel-indicators">
           <button
             type="button"
             data-bs-target="#tasks-carousel"
+            aria-label="Slide 1"
             aria-current="true"
             data-bs-slide-to="0"
             class="active"
@@ -80,10 +81,10 @@
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active m-3">
-            <h3 class="mb-3">Task 1: Find Meal Plan Options</h3>
-            <span class="badge bg-success mb-3">Success</span>
-            <div class="carousel-image">
+          <div class="carousel-item active">
+            <h3 class="m-3">Task 1: Find Meal Plan Options</h3>
+            <span class="badge bg-success ms-3">Success</span>
+            <div class="carousel-image m-3">
               <img src="assets/img/task_1_screen.png" alt="Task 1" />
             </div>
             <p class="m-3">
@@ -91,32 +92,40 @@
               commented that the menu was "too messy," implying that information
               could be better organized for quicker access.
             </p>
+            <div class="clock-component ms-3">
+              <img src = "assets/img/clock_icon.png" alt ="time:"></i>
+              <span>19 sec</span>
+            </div>
           </div>
 
-          <div class="carousel-item m-3">
-            <h3 class="mb-3">
+          <div class="carousel-item">
+            <h3 class="m-3">
               Task 2: Schedule a study abroad appointment with Lauren
               Stikeleather
             </h3>
-            <span class="badge bg-success mb-3">Success</span>
-            <div class="carousel-image">
+            <span class="badge bg-success ms-3">Success</span>
+            <div class="carousel-image m-3">
               <img src="assets/img/task_2_screen.png" alt="Task 2" />
             </div>
-            <p>
+            <p class="m-3">
               The user had to navigate through multiple levels of menus and
               pages to schedule an appointment. While the task was completed,
               the multiple steps indicate that the process could be streamlined
               for a better user experience.
             </p>
+            <div class="clock-component ms-3">
+              <img src = "assets/img/clock_icon.png" alt ="time:"></i>
+              <span>1 min</span>
+            </div>
           </div>
 
-          <div class="carousel-item m-3">
-            <h3 class="mb-3">
+          <div class="carousel-item">
+            <h3 class="m-3">
               Task 3: How far is Davidson College campus from Charlotte in
               miles?
             </h3>
-            <span class="badge bg-success mb-3">Success</span>
-            <div class="carousel-image">
+            <span class="badge bg-success ms-3">Success</span>
+            <div class="carousel-image m-3">
               <img src="assets/img/task_3_screen.png" alt="Task 3" />
             </div>
             <p class="m-3">
@@ -126,15 +135,19 @@
               specific information and criticized the design layout for making
               it easy to overlook key details.
             </p>
+            <div class="clock-component ms-3">
+              <img src = "assets/img/clock_icon.png" alt ="time:"></i>
+              <span>2min 48sec</span>
+            </div>
           </div>
 
-          <div class="carousel-item m-3">
-            <h3 class="mb-3">
+          <div class="carousel-item">
+            <h3 class="m-3">
               Task 4: Find the average net revenue percentage for Davidson
               students.
             </h3>
-            <span class="badge bg-danger mb-3">Failure</span>
-            <div class="carousel-image">
+            <span class="badge bg-danger ms-3">Failure</span>
+            <div class="carousel-image m-3">
               <img src="assets/img/task_4_screen.png" alt="Task 4" />
             </div>
             <p class="m-3">
@@ -144,12 +157,16 @@
               information. This indicates a severe issue in information
               accessibility.
             </p>
+            <div class="clock-component ms-3">
+              <img src = "assets/img/clock_icon.png" alt ="time:"></i>
+              <span>DNF</span>
+            </div>
           </div>
 
-          <div class="carousel-item m-3">
-            <h3 class="mb-3">Task 5: Find the Davidson Journal.</h3>
-            <span class="badge bg-success mb-3">Success</span>
-            <div class="carousel-image">
+          <div class="carousel-item">
+            <h3 class="m-3">Task 5: Find the Davidson Journal.</h3>
+            <span class="badge bg-success ms-3">Success</span>
+            <div class="carousel-image m-3">
               <img src="assets/img/task_5_screen.png" alt="Task 5" />
             </div>
             <p class="m-3">
@@ -157,6 +174,10 @@
               that the search bar was effective in this case, suggesting that
               some aspects of the website are more user-friendly than others.
             </p>
+            <div class="clock-component ms-3">
+              <img src = "assets/img/clock_icon.png" alt ="time:"></i>
+              <span>34sec</span>
+            </div>
           </div>
         </div>
 
@@ -181,7 +202,7 @@
       </div>
 
       <h2 class="mb-4">SUS Score</h2>
-      <form>
+      <form class ="mb-5">
         <div class="form-group d-flex align-items-center">
           <select
             class="form-control me-2"
@@ -358,7 +379,10 @@
         </div>
 
         <div class="form-group">
-          <button type="submit" id = "cal-btn" class="btn btn-primary">Caluate</button>
+          <button type="submit" id="cal-btn" class="btn btn-primary">
+            Calculate
+          </button>
+          <span id="sus-score-display" class="mt-4"></span>
         </div>
       </form>
     </div>
@@ -371,7 +395,6 @@
     ></script>
     <script src="assets/js/main.js"></script>
 
-    <footer>
-    </footer>
+    <footer></footer>
   </body>
 </html>
